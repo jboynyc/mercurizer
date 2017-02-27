@@ -64,6 +64,7 @@
                                   (get-pure-port mercury-endpoint
                                                  (list (string-append "x-api-key: " key)
                                                        "Content-Type: application/json")))]]
+    (display response)
     (if response
         (read-json response)
         #f)))
