@@ -64,14 +64,13 @@
                                   (get-pure-port mercury-endpoint
                                                  (list (string-append "x-api-key: " key)
                                                        "Content-Type: application/json")))]]
-    (display response)
     (if response
         (read-json response)
         #f)))
 
 (define (mercury-get url)
   (let [[result (mercury-parse *mercury-api-key* url)]]
-    (if result
+    (if (hash? result)
       (mercury
         (hash-ref result 'title)
         (hash-ref result 'author)
