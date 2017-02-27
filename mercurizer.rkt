@@ -112,7 +112,7 @@
                                 (input [[placeholder "Article URL goes here."]
                                         [name "url"]
                                         [class "u-full-width"]
-                                        [ic-post-to "."]
+                                        [ic-post-to "/"]
                                         [ic-trigger-on "keyup changed"]
                                         [ic-trigger-delay "1s"]
                                         [ic-indicator ".indicator"]
