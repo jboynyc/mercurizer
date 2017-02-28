@@ -20,5 +20,3 @@ Alternately, you can deploy Mercurizer to Heroku. Follow these simple steps:
 Consult `this blog post
 <https://lexi-lambda.github.io/blog/2015/08/22/deploying-racket-applications-on-heroku/>`_
 for additional guidance.
-
-:new_moon_with_face:
